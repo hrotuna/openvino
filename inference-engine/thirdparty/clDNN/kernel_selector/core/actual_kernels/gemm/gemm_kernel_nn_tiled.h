@@ -41,7 +41,6 @@ protected:
     bool Validate(const Params& params, const optional_params& options) const override;
     DispatchData SetDefault(const gemm_params& params) const override;
     JitConstants GetJitConstants(const gemm_params& params) const override;
-    // GemmTuningData InitGemmTuningData(const gemm_params& params) const;
     GemmTuningData SetTuningParams(const gemm_params& params) const;
 };
 }  // namespace kernel_selector
